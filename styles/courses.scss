@@ -1,0 +1,56 @@
+@mixin centralize-child {
+    display: flex;//flexivel
+    align-items: center;//centralizou no eixo x  
+    justify-content: center;// centralizou no eixo y
+}
+
+@mixin bottom-full{
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+@mixin subtitle-fonte {
+    font-size: 1.2em;//20% a mais do documento.
+    font-weight: bold;
+    
+}
+
+
+.cards-container{
+    display: flex; /*determina cards alinhando respeitando o espaçamento*/
+    justify-content: space-between; /*espaçamento entre cards    */
+    padding: 0 10vw;/*0 de vertical - 10 vw dehorizontal */
+    /*flex-direction: row;/*|---default--|
+    /*
+    row[-reverse] - direção do eixo principal
+    colum[-reverse] - direção da coluna
+    */
+
+    .card{
+        height: 400px;
+        width: 400px;
+        border: solid;
+        position: relative;
+
+        .card-footer{
+            position: absolute;//  já contempla com top, right, bottom e left em relação ao pai relativo(neste caso o position relative acima) 
+            height: 20%;// 20% de 400px que da 80px de altura;
+            background-color: gray;
+            color:white;
+            
+            @include subtitle-fonte();
+            @include bottom-full();
+            @include centralize-child();
+                
+           
+        }
+
+    }
+    
+}
+
+
+
+/*|-----------------------1920px----------------------|
+|----400px----||----card----||----card----|*/

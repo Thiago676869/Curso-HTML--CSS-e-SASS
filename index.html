@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Meu primeito site</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"> 
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com"> <!--google fonts-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,500;1,400;1,900&display=swap" rel="stylesheet">    
+    
+    <link rel="stylesheet" href="./styles/general.css">
+
+</head>
+
+
+<body>
+    <!-- https://www.cdnpkg.com/normalize?id=57635 -->
+    <header class="hero">
+        <div class="hero-title">
+            <h1>O curso completo de SASS</h1>
+            <h2>Onde você aprende do jeito certo</h2>
+        </div>   
+    </header>
+    <main class="stripped">  <!--organização-->
+        <section>
+            <h2>Cursos</h2>
+            <div class="cards-container"><!--Container os cards-->
+                <!--Cards-->
+                <div class="card">
+                    <img
+                        src="https://via.placeholder.com/400x400/615353/ad4f4f.jpg"
+                        alt="Curso de React">
+                    <div class="card-footer">
+                        React  
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img
+                        src="https://via.placeholder.com/400x400/615353/ad4f4f.jpg"
+                        alt="Curso de Mongo DB"> <!--Trata-se de uma alternativa caso a imagem falhe-->
+                    <div class="card-footer">
+                        Mongo DB
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img
+                        src="https://via.placeholder.com/400x400/615353/ad4f4f.jpg"
+                        alt="Curso de React"> <!--google tambem identifica como um "bom site"-->
+                    <div class="card-footer">
+                        React Native
+                    </div>
+                </div>
+                
+            </div>
+        </section>
+
+        <section class="advantages-section">
+            <h2>Vantagens</h2>
+            <div class="advantages-container">
+                <div class="advantage">
+                    <h3>Teórico</h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur
+                    adipisicing elit. In tenetur nulla totam emo
+                    quam tempora praesentium eveniet cupiditate,
+                    odio itaque!
+                    </p>
+                </div>
+                <div class="advantage">
+                    <h3>Prático</h3>
+                    <p>Lorem, ipsum dll olor sit amet consectetur
+                    adipisicing elit. In tenetur nulla totam emo
+                    quam tempora praesentium eveniet cupiditate,
+                    odio itaque!
+                    </p>
+                </div>       
+            </div>
+        </section>
+
+        <section>
+            <h2>Contato</h2>
+            <form action="">
+                <input
+                    type="text"
+                    name="nome"
+                    placeholder="Nome"/> <!--plac..fica dentro do box-->
+
+                <input
+                    type="text"
+                    name="telefone"
+                    placeholder="Telefone"/>
+
+                <textarea
+                    name="mensagem"
+                    placeholder="Mensagem"
+                    cols="30" 
+                    rows="10">
+                </textarea><!--30 linhas de coluna e 10 linhas para tex area inicial-->
+                <button>Enviar</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-info">
+            @thiagodosSantos.oficial
+        </div>
+        
+    </footer>
+</body>
+</html>

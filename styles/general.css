@@ -1,0 +1,154 @@
+@charset "UTF-8";
+body {
+  font-family: Roboto, sans-serif;
+  /*1a opção fonte, 2a opção fonte*/
+  background-color: #f2f2f2;
+}
+
+h2 {
+  text-align: center;
+}
+
+/* CSS HEX */
+/*--dutch-white--*/
+/*--steel-teal--*/
+.stripped section {
+  padding: 25px 0;
+}
+.stripped section:nth-child(2n) {
+  background-color: #0a4e5a;
+  color: white;
+}
+
+h6 {
+  font-size: 1em;
+}
+
+h5 {
+  font-size: 1.25em;
+}
+
+h4 {
+  font-size: 1.5em;
+}
+
+h3 {
+  font-size: 1.75em;
+}
+
+h2 {
+  font-size: 2em;
+}
+
+h1 {
+  font-size: 2.25em;
+}
+
+/* http://localhost:8082  */
+.hero {
+  height: 100vh;
+  /* width: 50vh; */
+  background-color: lightgray;
+  display: flex;
+  align-items: center;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/pexels-roberto-nickson-2559941.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.hero-title {
+  background-color: rgba(144, 180, 148, 0.8);
+  text-align: center;
+  width: 100%;
+  /*100% da largura da tela*/
+  padding: 5% 0%;
+}
+.hero-title h1 {
+  color: #0c0e70;
+  font-size: 6.5em;
+}
+.hero-title h2 {
+  color: #2b3e92;
+}
+
+.cards-container {
+  display: flex;
+  /*determina cards alinhando respeitando o espaçamento*/
+  justify-content: space-between;
+  /*espaçamento entre cards    */
+  padding: 0 10vw;
+  /*0 de vertical - 10 vw dehorizontal */
+  /*flex-direction: row;/*|---default--|
+  /*
+  row[-reverse] - direção do eixo principal
+  colum[-reverse] - direção da coluna
+  */
+}
+.cards-container .card {
+  height: 400px;
+  width: 400px;
+  border: solid;
+  position: relative;
+}
+.cards-container .card .card-footer {
+  position: absolute;
+  height: 20%;
+  background-color: gray;
+  color: white;
+  font-size: 1.2em;
+  font-weight: bold;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/*|-----------------------1920px----------------------|
+|----400px----||----card----||----card----|*/
+.advantages-section h2 {
+  margin-bottom: 0;
+}
+.advantages-section .advantages-container {
+  display: flex;
+  justify-content: center;
+}
+.advantages-section .advantages-container .advantage {
+  width: 30vw;
+  text-align: center;
+  font-size: 1.2em;
+}
+.advantages-section .advantages-container p {
+  padding: 0 15px 15px 15px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  padding: 0 20vw;
+}
+form * {
+  margin: 10px 0;
+  border-radius: 5px;
+}
+form button {
+  background-color: #0a4e5a;
+  color: #bfc8adff;
+}
+
+footer {
+  background-color: black;
+  min-height: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+footer .footer-info {
+  color: white;
+  text-align: center;
+  font-size: 1.2em;
+}
+
+/*# sourceMappingURL=general.css.map */

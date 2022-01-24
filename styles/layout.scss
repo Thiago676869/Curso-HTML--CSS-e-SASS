@@ -1,0 +1,30 @@
+body{
+    font-family: Roboto, sans-serif; /*1a opção fonte, 2a opção fonte*/
+    background-color: darken(white, 5%) //dark 5% mais claro
+}
+
+
+h2{
+    text-align: center;
+}
+
+    /* CSS HEX */
+$secondary: rgb(43, 62, 146);/*--dutch-white--*/
+$laurel-green: #bfc8adff;
+$dark-sea-green: #90b494ff;
+$primary: rgb(10, 78, 90); /*--steel-teal--*/
+$independence: #545775ff;
+
+
+.stripped section {
+    padding: 25px 0;
+
+    &:nth-child(2n){    //& referencia ao pai
+        background-color: $primary;
+        color: white;
+    }
+      
+}
+
+
+

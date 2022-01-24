@@ -1,0 +1,14 @@
+footer{
+    background-color: black;
+    min-height: 10vh;//10% de eixo vertical
+
+    display: flex;//
+    align-items: center;//com esses tres itens, conseguirá alinhar qualquer coisa no scss
+    justify-content: center;//
+
+    .footer-info{
+        color:white;
+        text-align: center;
+        font-size: 1.2em;
+    }
+}

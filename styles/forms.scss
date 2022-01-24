@@ -1,0 +1,15 @@
+form{
+    display: flex;
+    flex-direction: column;
+    padding: 0 20vw; //elimina 20% em cada lado
+
+    *{//propriedades para o formulario
+        margin: 10px 0; //10px de margim vertical e 0 de lateral  
+        border-radius: 5px ;// 5px de curvatura
+    }
+
+    button{
+        background-color: $primary;
+        color: $laurel-green;
+    }
+}
